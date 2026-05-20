@@ -3,49 +3,51 @@
   align-items: center;
   gap: 12px;
   padding: 12px;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid #333;
   transition: background-color 0.2s;
+  background-color: #262635;
 }
 
 .todo-item:hover {
-  background-color: #f5f5f5;
+  background-color: #2d2d42;
 }
 
 .todo-item.completed {
-  opacity: 0.6;
+  opacity: 0.5;
 }
 
 .todo-checkbox {
   width: 20px;
   height: 20px;
   cursor: pointer;
-  accent-color: #667eea;
+  accent-color: #00d9ff;
 }
 
 .todo-text {
   flex: 1;
   font-size: 1rem;
-  color: #333;
+  color: #e0e0e0;
 }
 
 .todo-item.completed .todo-text {
   text-decoration: line-through;
-  color: #999;
+  color: #666;
 }
 
 .todo-delete {
   padding: 6px 12px;
-  background-color: #ff6b6b;
+  background-color: #e74c3c;
   color: white;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   font-size: 0.9rem;
-  transition: background-color 0.2s;
+  transition: background-color 0.2s, box-shadow 0.2s;
 }
 
 .todo-delete:hover {
-  background-color: #ff5252;
+  background-color: #c0392b;
+  box-shadow: 0 2px 8px rgba(231, 76, 60, 0.4);
 }
 
 .todo-delete:active {
